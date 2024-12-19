@@ -36,3 +36,4 @@ elif magasabb > alacsonyabb:
     print("Magasabb")
 else:
     print("Egyenlő")
+
