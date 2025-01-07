@@ -8,7 +8,14 @@ for i in range(1, n-1):
         alacsonyabb.append(i+1)
 print("A(z),",alacsonyabb,". diák csak a mellette levőket látja")
 
-
+print("b) feladat")
+t={185, 158, 159, 160, 167, 174, 172, 185}
+n=len(t)
+rossz_helyen=[]
+for i in range(1, n-1):
+    if t[i-1] > t[i] and t[i+1] > t[i]:
+        rossz_helyen.append(i+1)
+print("A(z)",rossz_helyen,". diák van rossz helyen")
 
 
 #Kőmíves Albert
