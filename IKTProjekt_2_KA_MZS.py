@@ -1,3 +1,16 @@
+#Molnár Zsófia
+print("a) feladat")
+t = [160, 185, 159, 185, 167, 174, 172, 185]
+n = len(t)
+alacsonyabb=[]
+for i in range(1, n-1):
+    if t[i] < t[i-1] and t[i] < t[i+1]:
+        alacsonyabb.append(i+1)
+print("A(z),",alacsonyabb,". diák csak a mellette levőket látja")
+
+
+
+
 #Kőmíves Albert
 #10/B
 #Python első beadandó
@@ -36,20 +49,3 @@ elif magasabb > alacsonyabb:
     print("Magasabb")
 else:
     print("Egyenlő")
-
-#Molnár Zsófia
-#10/B
-#Python első beadandó
-print("a) feladat")
-t=[185, 158, 159, 160, 167, 174, 172, 185]
-n=len(t)
-talalat = -1 
-for i in range(1, n - 1):  
-    if t[i] <= t[i - 1] and t[i] <= t[i + 1]:
-        talalat = i + 1  
-
-
-if talalat != -1:
-    print("A(z)", talalat, ". diák az, akit ha elnéz jobbra vagy balra, nem látja csak a mellette levőt.")
-else:
-    print("Nincs olyan diák, aki csak a mellette levőt látja.")
